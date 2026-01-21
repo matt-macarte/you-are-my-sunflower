@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDEX</title>
+    <link href="src/style.css" rel="stylesheet"/>
+    <script>
+    /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+  </head>
+  <body>
+    
+    <div class="row-container">
+      
+      <header id="header">
+        <section id = "themes">
+          <button data-theme="darkween"  id="darkween" class = "theme" >darkween</button>
+          <button data-theme="madruga"   id="madruga"  class = "theme" >madruga</button>
+          <button data-theme="lightween" id="lightween"class = "theme" >lightween</button>
+          <button data-theme="swomp"     id="swomp"    class = "theme" >swomp</button>
+        </section>
+        header aqui
+      </header>
+
+      <main>
+        <div class = "game" id = "game">
+
+          <canvas type = "module" id = "jogo"></canvas>
+          
+        </div>
+
+          <div class = "controles-container">
+
+            <div class = "controles-row" id="move1">
+              <button class = "controles" id = "up"     type = "button">      </button>
+            </div>
+            <div class = "controles-row" id="move2">
+              <button class = "controles" id = "left"   type = "button"> </button>
+              <button class = "controles" id = "down"   type = "button"> </button>
+              <button class = "controles" id = "right"  type = "button"> </button>
+            </div>
+            <div class = "controles-row" id="menu">
+              <button class = "controles" id = "back" type = "button"> back   </button>
+              <button class = "controles" id = "play" type = "button"> play   </button>
+              <button class = "controles" id = "stop" type = "button"> stop   </button>
+              <button class = "controles" id = "next" type = "button"> next   </button>
+            </div>
+          </div>
+
+      </main>
+
+      <div class = "sidebar" id = "rightSide">
+        lado direito
+      </div>
+
+      <footer id = "footer">
+        footer aqui
+      </footer>
+    
+    </div>
+  
+  </body>
+  <script type="module" src="src/script.js"></script>
+</html>
+
+<!-- e lá vamos nós -->
