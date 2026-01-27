@@ -1,3 +1,5 @@
+import Temas from "./Temas.js";
+
 class Player {
     constructor(ctx, gridPoints, gridLimits) {
         console.log("new player");
@@ -33,12 +35,14 @@ class Player {
 
         this.isMoving = false;
 
+        this.theme = new Temas;
+
     }
 
 
     drawPlayer() {
         //console.log("oi testando");
-        this.ctx.fillStyle = "#00aeffaa"
+        this.ctx.fillStyle = `rgb(${this.theme.temaDarkween.accent.r},${this.theme.temaDarkween.accent.g},${this.theme.temaDarkween.accent.b})`;
         this.ctx.beginPath();
         this.ctx.arc(this.xPosition, this.yPosition, 32, 0, 2 * Math.PI);
         this.ctx.fill();
